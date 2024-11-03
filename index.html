@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form name="fname" onclick="funcvalidation()">
+        NAME:
+        <input name="myname" type="text" placeholder="enter your name">
+        <br>
+        <br>
+        <button type="submit">SUBMIT</button>
+    </form>
+    <script>
+        function funcvalidation() {
+            var x = document.forms["fname"]["myname"].value
+        if (x == '') {
+            alert ("name must be enter")
+            return false
+        }
+        else {
+            document.write("name submitted")
+        }
+    }
+    </script>
+</body>
+
+</html>
